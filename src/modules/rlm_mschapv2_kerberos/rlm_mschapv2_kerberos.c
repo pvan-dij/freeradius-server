@@ -15,7 +15,7 @@
  */
 
 /**
- * $Id$
+ * $Id: 51f17d944cf0fb8e6ce9b99dae1ea289916105c8 $
  * @file rlm_mschapv2_kerberos.c
  * @brief Implemented mschap authentication.
  *
@@ -23,7 +23,7 @@
  */
 
 /*  MPPE support from Takahiro Wagatsuma <waga@sic.shibaura-it.ac.jp> */
-RCSID("$Id$")
+RCSID("$Id: 51f17d944cf0fb8e6ce9b99dae1ea289916105c8 $")
 
 #include <freeradius-devel/radiusd.h>
 #include <freeradius-devel/modules.h>
@@ -638,6 +638,8 @@ static int mod_instantiate(CONF_SECTION *conf, void *instance)
 	if (inst->ntlm_auth) {
 		inst->method = AUTH_NTLMAUTH_EXEC;
 	}
+
+	printf("DLFJASFLK;SALKFASKLFJASLKFJSLKFJLSJFLSJASFKLASJKL;FSJLKFJSDALKFJSADLKFJL;SAFKLADSFL;KSDJ");
 
 	switch (inst->method) {
 	case AUTH_INTERNAL:
