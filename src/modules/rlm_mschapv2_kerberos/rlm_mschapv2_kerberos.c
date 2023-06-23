@@ -727,8 +727,6 @@ static int mod_instantiate(CONF_SECTION *conf, void *instance)
 	}
 	inst->krb_ldap_context->kcontext = inst->krb_context;
 
-	printf("DLFJASFLK;SALKFASKLFJASLKFJSLKFJLSJFLSJASFKLASJKL;FSJLKFJSDALKFJSADLKFJL;SAFKLADSFL;KSDJ\n");
-
 
 	/* getting infos from krb5.conf */
 	inst->krb_ldap_context->server_info_list = (krb5_ldap_server_info**)calloc(2, sizeof(krb5_ldap_server_info*));
@@ -795,6 +793,8 @@ static int mod_instantiate(CONF_SECTION *conf, void *instance)
 		cf_log_err_cs(conf, "krb5_ldap_read_startup_information() function failed");
 		return -1;
 	}
+
+	printf("bruhDLFJASFLK;SALKFASKLFJASLKFJSLKFJLSJFLSJASFKLASJKL;FSJLKFJSDALKFJSADLKFJL;SAFKLADSFL;KSDJ\n");
 
 	/* retrieving master keyblock infos */
 	char* stash_file;
