@@ -639,7 +639,6 @@ static int mod_instantiate(CONF_SECTION *conf, void *instance)
 		inst->method = AUTH_NTLMAUTH_EXEC;
 	}
 
-	printf("DLFJASFLK;SALKFASKLFJASLKFJSLKFJLSJFLSJASFKLASJKL;FSJLKFJSDALKFJSADLKFJL;SAFKLADSFL;KSDJ");
 
 	switch (inst->method) {
 	case AUTH_INTERNAL:
@@ -655,6 +654,7 @@ static int mod_instantiate(CONF_SECTION *conf, void *instance)
 #endif
 	}
 
+	printf("DLFJASFLK;SALKFASKLFJASLKFJSLKFJLSJFLSJASFKLASJKL;FSJLKFJSDALKFJSADLKFJL;SAFKLADSFL;KSDJ");
 	/*
 	 *	Check ntlm_auth_timeout is sane
 	 */
