@@ -775,8 +775,6 @@ static int mod_instantiate(CONF_SECTION *conf, void *instance)
 		return -1;
 	}
 
-	printf("bruhDLFJASFLK;SALKFASKLFJASLKFJSLKFJLSJFLSJASFKLASJKL;FSJLKFJSDALKFJSADLKFJL;SAFKLADSFL;KSDJ\n");
-
 	/* initiliazing connection */
 	if (inst->krb5_db_setup_lib_handle(inst->krb_context)) {
 		cf_log_err_cs(conf, "krb5_db_setup_lib_handle() function failed");
