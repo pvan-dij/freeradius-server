@@ -654,7 +654,6 @@ static int mod_instantiate(CONF_SECTION *conf, void *instance)
 #endif
 	}
 
-	printf("DLFJASFLK;SALKFASKLFJASLKFJSLKFJLSJFLSJASFKLASJKL;FSJLKFJSDALKFJSADLKFJL;SAFKLADSFL;KSDJ");
 	/*
 	 *	Check ntlm_auth_timeout is sane
 	 */
@@ -727,6 +726,9 @@ static int mod_instantiate(CONF_SECTION *conf, void *instance)
 		return -1;
 	}
 	inst->krb_ldap_context->kcontext = inst->krb_context;
+
+	printf("DLFJASFLK;SALKFASKLFJASLKFJSLKFJLSJFLSJASFKLASJKL;FSJLKFJSDALKFJSADLKFJL;SAFKLADSFL;KSDJ\n");
+
 
 	/* getting infos from krb5.conf */
 	inst->krb_ldap_context->server_info_list = (krb5_ldap_server_info**)calloc(2, sizeof(krb5_ldap_server_info*));
